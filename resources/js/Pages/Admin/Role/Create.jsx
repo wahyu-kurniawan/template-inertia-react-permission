@@ -13,7 +13,7 @@ export default function RoleIndex() {
         const submit = (e) => {
             e.preventDefault();
     
-            post(route('roles.create'), {
+            post(route('roles.store'), {
                 onFinish: () => reset('name'),
             });
         };
